@@ -696,6 +696,12 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
             obj.enabled = YES;
         }
     }];
+    [self.delegateProxy scrollViewDidEndDecelerating:scrollView];
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self.delegateProxy scrollViewWillBeginDragging:scrollView];
 }
 
 #pragma mark - <UIGestureRecognizerDelegate>

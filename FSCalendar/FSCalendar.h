@@ -117,6 +117,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
+
 /**
  Asks the delegate whether the specific date is allowed to be selected by tapping.
  */
